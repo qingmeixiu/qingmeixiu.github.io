@@ -88,17 +88,17 @@
 
 
 
-<meta name="description" content="Hexo_Next_Album使用方法参考hexo的Next主题添加相册">
+<meta name="description" content="Photos  图片正在加载中…     (function() {     var loadScript = function(path) {       var $script = document.createElement(&apos;script&apos;)       document.getElementsByTagName(&apos;body&apos;)[0].appendChild($script)">
 <meta property="og:type" content="website">
-<meta property="og:title" content="青梅嗅">
-<meta property="og:url" content="http://yoursite.com/lib/ablum/README.html">
+<meta property="og:title" content="照片">
+<meta property="og:url" content="http://yoursite.com/lib/album/index.html">
 <meta property="og:site_name" content="青梅嗅">
-<meta property="og:description" content="Hexo_Next_Album使用方法参考hexo的Next主题添加相册">
+<meta property="og:description" content="Photos  图片正在加载中…     (function() {     var loadScript = function(path) {       var $script = document.createElement(&apos;script&apos;)       document.getElementsByTagName(&apos;body&apos;)[0].appendChild($script)">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-26T13:01:54.008Z">
+<meta property="og:updated_time" content="2018-07-26T13:01:53.880Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="青梅嗅">
-<meta name="twitter:description" content="Hexo_Next_Album使用方法参考hexo的Next主题添加相册">
+<meta name="twitter:title" content="照片">
+<meta name="twitter:description" content="Photos  图片正在加载中…     (function() {     var loadScript = function(path) {       var $script = document.createElement(&apos;script&apos;)       document.getElementsByTagName(&apos;body&apos;)[0].appendChild($script)">
 
 
 
@@ -128,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/lib/ablum/README.html"/>
+  <link rel="canonical" href="http://yoursite.com/lib/album/"/>
 
 
 
 
 
-  <title> | 青梅嗅</title>
+  <title>照片 | 青梅嗅</title>
   
 
 
@@ -307,7 +307,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline"></h1>
+	<h1 class="post-title" itemprop="name headline">照片</h1>
 
 
 
@@ -319,8 +319,23 @@
       <div class="post-body">
         
         
-          <h1 id="Hexo-Next-Album"><a href="#Hexo-Next-Album" class="headerlink" title="Hexo_Next_Album"></a>Hexo_Next_Album</h1><h2 id="使用方法参考"><a href="#使用方法参考" class="headerlink" title="使用方法参考"></a>使用方法参考</h2><p><a href="http://www.biueo.com/2018/02/17/hexo%E7%9A%84Next%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%86%8C/#more" target="_blank" rel="noopener">hexo的Next主题添加相册</a></p>
+          <p><link rel="stylesheet" href="../lib/album/ins.css"></p>
+<p><link rel="stylesheet" href="../lib/album/photoswipe.css"> </p>
+<p><link rel="stylesheet" href="../lib/album/default-skin/default-skin.css"> </p>
+<div class="photos-btn-wrap"><br>  <a class="photos-btn active" href="javascript:void(0)" target="_blank" rel="external">Photos</a><br></div><br><div class="instagram itemscope"><br>  <a href="http://www.biueo.com" target="_blank" class="open-ins">图片正在加载中…</a><br></div>
 
+<script>
+  (function() {
+    var loadScript = function(path) {
+      var $script = document.createElement('script')
+      document.getElementsByTagName('body')[0].appendChild($script)
+      $script.setAttribute('src', path)
+    }
+    setTimeout(function() {
+        loadScript('../lib/album/ins.js')
+    }, 0)
+  })()
+</script>
         
       </div>
       
@@ -338,10 +353,6 @@
 
 
           
-
-  
-
-
 
         </div>
         
@@ -362,17 +373,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -432,22 +434,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo-Next-Album"><span class="nav-number">1.</span> <span class="nav-text">Hexo_Next_Album</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用方法参考"><span class="nav-number">1.1.</span> <span class="nav-text">使用方法参考</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -527,6 +513,46 @@
     
 
    
+   <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+          </div>
+       </div>
+     </div>
+    
 
 
   </div>
